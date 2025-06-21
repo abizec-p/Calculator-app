@@ -1,0 +1,181 @@
+
+.sidebar{
+    background-color: white;
+    width:300px;
+    color: green;
+    height: 100dvh;
+}
+
+.sidebar h1{
+    padding: 2px 20px;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 25px;
+    border-bottom: 1px solid rgb(138, 138, 138);
+}
+.calculator-type h3{
+    margin-top: 20px;
+    margin-left: 40px;
+    color: black;
+    font-size: 16px;
+}
+.calculator-type{
+    display: flex;
+    flex-direction: column;
+}
+.calculator-type a{
+    margin: 3px 0;
+    margin-left: 20px;
+    padding: 5px 10px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    color: #1e1e1e;
+    transition: 0.3s;
+    border-radius: 10px;
+        margin-right: 15px;
+
+
+}
+.calculator-type a:hover{
+    background-color: #009c24;
+    color: white;
+}
+.calculator-type span{
+    padding: 5px 10px;
+    font-size: 25px;
+}
+
+/*normal */
+.normal-calculator{
+}
+.normal-calculator h1{
+    font-size: 25px;
+    padding: 20px 20px;
+    margin-left: 15px;
+    color: #1e1e1e;
+}
+
+.calculator-basic{
+    width: 500px;
+    margin-left: 35px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 25px;
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    text-align: center;
+    box-shadow: 3px 3px  rgb(233, 233, 233);
+
+}
+.calculator-basic button{
+    padding: 15px 10px;
+}
+.calculator-screen{
+    grid-column: 1 / -1;
+    padding: 10px 10px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    background-color: rgb(238, 238, 238);
+    text-align: right;
+
+
+}
+.back{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    background-color: rgb(238, 238, 238);
+}
+
+.calculator-basic button{
+    border-radius: 3px;
+}
+
+.zero{
+    grid-column: 4 /1;
+}
+.shade{
+        background-color: rgb(238, 238, 238);
+        border: none;
+
+}
+.border{
+    border: 1px solid rgb(235, 235, 235);
+    background-color: white;
+}
+
+
+/* age calculator*/
+
+.heading h1{
+    padding: 20px 20px;
+    font-size: 25px;
+    margin-left: 15px;
+
+}
+.age-form{
+    margin: 20px 50px;
+
+}
+.age-form input{
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+
+
+}
+
+.age-form button{
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #009c24;
+    color: white;
+    margin: 0 5px;
+
+
+}
+.text-part-age{
+    margin-top: 20px;
+
+}
+.age-calculator-second-part{
+    margin: 0px 40px;
+        margin-top: 50px;
+
+}
+.age-calculator-second-part h3{
+    font-size: 20px;
+
+}
+.age-question{
+    margin-top: 20px;
+}
+.age-question select{
+    padding: 0px 20px;
+    outline: none;
+    border: none;
+}
+.age-question button{
+    padding: 5px 20px ;
+    margin-top: 10px;
+    background-color: #009c24;
+    outline: none;
+    border: none;
+    color: white;
+}
+.answers-agequiz{
+    margin-top: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    width: 200px;
+    padding: 20px;
+    color: white;
+    font-style: bold;
+}

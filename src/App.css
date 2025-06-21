@@ -1,0 +1,16 @@
+.main-page{
+    display: flex;
+    justify-content: space-between;
+}
+.hero{
+    width: 80dvw;
+    position: absolute;
+    right: 0;
+    background-color: rgb(235, 235, 235);
+    height: 100dvh;
+}
+.sidebar-main{
+    width: 20dvw;
+    position: fixed;
+    top: 0;
+}
