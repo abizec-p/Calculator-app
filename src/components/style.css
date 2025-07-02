@@ -1,4 +1,8 @@
-
+.main-header{
+      font-size: 25px;
+    padding: 20px 20px;
+    margin-left: 15px;
+    color: #1e1e1e;}
 .sidebar{
     background-color: white;
     width:300px;
@@ -118,31 +122,47 @@
 
 }
 .age-form{
-    margin: 20px 50px;
+    margin: 20px 35px;
+    background-color: white;
+    width: 350px;
+    height: 300px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(227, 227, 227);
+    
 
 }
 .age-form input{
     padding: 10px 20px;
     font-size: 18px;
-    border: none;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
     outline: none;
+    margin-top: 20px;
+    
 
 
 }
 
 .age-form button{
-    padding: 10px 20px;
+    padding: 12px 22px;
     font-size: 18px;
     border: none;
     background-color: #009c24;
     color: white;
     margin: 0 5px;
+    border-radius: 10px;
 
 
 }
 .text-part-age{
-    margin-top: 20px;
+    margin-left: 10px;
+    margin-top: 40px;
 
+
+}
+.age-result{
+    font-size: 20px;
 }
 .age-calculator-second-part{
     margin: 0px 40px;
@@ -150,7 +170,7 @@
 
 }
 .age-calculator-second-part h3{
-    font-size: 20px;
+    font-size: 30px;
 
 }
 .age-question{
@@ -178,4 +198,100 @@
     padding: 20px;
     color: white;
     font-style: bold;
+}
+
+
+
+/* interest calculator*/
+
+
+
+.interest-calculator-container{
+    margin: 10px 40px;
+    padding: 20px 20px;
+    background-color: white;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+.interest-calculator-container button{
+    background-color: #009c24;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    font-style: bold;
+}
+.interest-calculator-container input{
+    padding: 10px 10px;
+    width: 90%;
+    outline: none;
+    border: none;
+    background-color: rgb(228, 228, 228);
+}
+.interest-calculator-container p{
+    padding: 10px 0;
+}
+
+.answer-section{
+    margin-left: 40px;
+    margin-top: 20px;
+
+}
+.answer-section h3{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* hours*/
+
+.hours-container{
+    margin: 20px 40px;
+    padding: 20px 20px;
+    background-color: white;
+ box-shadow: 0 3px 3px rgb(231, 231, 231);
+ width: 400px;
+
+
+}
+.hours-container input{
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.hours-container button{
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #009c24;
+    color: white;
+    border: none;
+    outline: none;
+
+
+}
+.result-hours{
+    margin-top: 20px;
+}
+
+
+/* grade */
+
+
+.grade-container{
+    width: 30dvw;
+
+}
+.title{
+    display: flex;
+    justify-content: space-around;
+
+}
+.value{
+    display: flex;
 }

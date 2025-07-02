@@ -26,30 +26,25 @@ function Sidebar() {
             </span>
             Age calculator
           </Link>
-          <Link>
+          <Link to="/interest">
             <span>
               <CiPercent />
             </span>
             Interest calculator
           </Link>
-          <Link>
+          <Link to="/scientific">
             <span>
 <GiMaterialsScience />
             </span>
             Scientific calculator
           </Link>
-          <Link>
+          <Link to="/hours">
             <span>
 <TbHours12 />
             </span>
             Hours calculator
           </Link>
-          <Link>
-            <span>
-              <TbFilePercent  />
-            </span>
-            Grade calculator
-          </Link>
+         
         </div>
       </div>
     </section>

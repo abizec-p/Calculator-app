@@ -32,7 +32,7 @@ export default function Normal(){
 
     return(
         <section className="normal-calculator">
-           <h1>Simple calculator</h1>
+           <h1 className="main-header">Simple calculator</h1>
            <div className="calculator-basic">
             <input value={value} className="calculator-screen" placeholder="0"  />
              <button value="7" onClick={handleClick} className="border">7</button>
