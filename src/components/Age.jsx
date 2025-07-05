@@ -50,8 +50,9 @@ export default function Age(){
                 <h1 className="main-heading">Age Calculator</h1>
             </div>
             <div className="age-form">
-                <input value={birthdate} onChange={handleDateChange} type="date" name="age" /><button onClick={calculateAge}> Calculate</button>
-
+                <div className="input-button">
+                <input  value={birthdate} onChange={handleDateChange} type="date" name="age" /><button onClick={calculateAge}> Calculate</button>
+                 </div>
                 <div className="text-part-age">
                 <div><p>Today's date: <b>{dayjs().format("MMMM D,YYYY")}</b> </p></div>
             <br />    <div className="age-result"><p>So your age should be: <br /> <b>{age.years} years {age.months} Months {age.days} Days</b> </p></div>

@@ -18,7 +18,7 @@ const Interest = () => {
         <h1 className='main-header'>Interest calculator</h1>
          <div className='interest-calculator-container'>
          <div>   <p>Principal (initial money):</p><input value={principal} onChange={(e)=>setPrincipal(e.target.value)} type="number" /></div>
-         <div>   <p>Annual Interest Rate:</p><input value={rate} onChange={(e)=>setRate(e.target.value)} type="number" /></div>
+         <div >   <p>Annual Interest Rate:</p><input  value={rate} onChange={(e)=>setRate(e.target.value) } type="number" max={99} /> </div>
          <div>   <p>Time in years:</p><input value={time} onChange={(e => setTime(e.target.value))} type="number" /></div>
          <div>   <button onClick={calculateInterest}>Calculate</button></div>
 

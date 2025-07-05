@@ -3,19 +3,107 @@
     padding: 20px 20px;
     margin-left: 15px;
     color: #1e1e1e;}
+
+    .clicked-sidebar{
+         background-color: white;
+    width:100px;
+    color: #008000;
+    height: 100dvh;
+
+    }
 .sidebar{
     background-color: white;
-    width:300px;
-    color: green;
+    width:320px;
+    color: #008000;
     height: 100dvh;
 }
+.cross{
+    padding: 10px 10px;
+    font-size: 20px;
+    color: red;
+}
+.clicked-header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+        border-bottom: 1px solid rgb(219, 219, 219);
 
-.sidebar h1{
-    padding: 2px 20px;
-    margin-left: 15px;
-    margin-top: 20px;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+        border-bottom: 1px solid rgb(219, 219, 219);
+
+
+}
+.ham{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 13px;
     font-size: 25px;
-    border-bottom: 1px solid rgb(138, 138, 138);
+}
+.clicked-header img{
+        height: 50px;
+
+
+}
+.header img{
+    height: 50px;
+
+
+}
+.clicked-header h1{
+    display: none;
+}
+.header h1{
+    padding-left: 0;
+    margin-left: 0;
+}
+.clicked-toggle-button{
+     margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    z-index: 1000;
+    margin-left: 19px;
+    margin-bottom: 10px;
+
+}
+
+.toggle-button{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    z-index: 1000;
+    margin-left: 120px;
+    
+}
+
+
+.category{
+    display: flex;
+    align-items: center;
+}
+
+.icons{
+    padding: 10px 10px;
+    font-size: 20px;
+}
+.sidebar h1{
+    font-size: 25px;
+}
+.clicked-calculator-type h3{
+    display: none;
 }
 .calculator-type h3{
     margin-top: 20px;
@@ -26,6 +114,11 @@
 .calculator-type{
     display: flex;
     flex-direction: column;
+}
+.clicked-calculator-type{
+     display: flex;
+    flex-direction: column;
+
 }
 .calculator-type a{
     margin: 3px 0;
@@ -41,14 +134,86 @@
 
 
 }
-.calculator-type a:hover{
+.clicked-calculator-type a{
+      margin: 3px 0;
+    margin-left: 10px;
+    padding: 5px 10px;
+    width: 40px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    color: #1e1e1e;
+    transition: 0.3s;
+    border-radius: 10px;
+        margin-right: 5px;
+
+}
+
+.calculator-type a:hover,.clicked-calculator-type a:hover{
     background-color: #009c24;
     color: white;
 }
-.calculator-type span{
-    padding: 5px 10px;
-    font-size: 25px;
+
+.clicked-calculator-type .icons{
+     padding: 10px 10px;
+    font-size: 20px;
+
 }
+
+.clicked-calculator-type .side-menu{
+    display: none;
+}
+.calculator-type span{
+  
+}
+
+@media (max-width:768px) {
+
+    .clicked-header img{
+    height: 50px;
+}
+.clicked-calculator-type .side-menu{
+    display: flex;
+}
+.clicked-calculator-type a{
+      margin: 3px 0;
+    margin-left: 10px;
+    padding: 5px 10px;
+    width: 80dvw;
+    font-size: 18px;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    color: #1e1e1e;
+    transition: 0.3s;
+    border-radius: 10px;
+        margin-right: 5px;
+
+}.clicked-calculator-type{
+     display: flex;
+    flex-direction: column;
+
+}
+.clicked-toggle-button{
+     margin-top: 10px;
+     position: absolute;
+     top: 10px;
+     right: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    z-index: 1000;
+    margin-left: 19px;
+    margin-bottom: 10px;
+
+}
+
+}
+
+
+
+
 
 /*normal */
 .normal-calculator{
@@ -112,6 +277,35 @@
     background-color: white;
 }
 
+
+@media (max-width:768px) {
+    .normal-calculator h1{
+    font-size: 25px;
+    padding: 20px 15px;
+    margin-left: 0px;
+    color: #1e1e1e;
+}
+    .calculator-basic{
+    width: 300px;
+    margin-left: 15px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 25px;
+    padding: 20px 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    text-align: center;
+    box-shadow: 3px 3px  rgb(233, 233, 233);
+
+}
+.calculator-basic button{
+    border-radius: 3px;
+    font-size: 18px;
+    color: #1e1e1e;
+}
+    
+}
 
 /* age calculator*/
 
@@ -199,7 +393,109 @@
     color: white;
     font-style: bold;
 }
+@media (max-width:768px) {
+    .age-calculator{
+        height: 1000px;
+    background-color: rgb(235, 235, 235);
+    }
+    .heading h1{
+    padding: 20px 20px;
+    font-size: 25px;
+    margin-left: 5px;
 
+}
+.input-button{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    align-items: first baseline;
+    height: 40px;
+
+    
+
+}
+.age-form{
+    margin: 20px 15px;
+    background-color: white;
+    width: 320px;
+    height: 300px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(227, 227, 227);
+        
+
+}
+.age-form button{
+    padding: 5px 22px;
+    font-size: 18px;
+    border: none;
+    background-color: #009c24;
+    color: white;
+    margin: 0 10px;
+    border-radius: 10px;
+            margin-bottom: 15px;
+
+
+
+}
+.age-form input{
+    padding: 15px 20px;
+    width: 150px;
+    font-size: 18px;
+    border: 1px solid rgb(209, 209, 209);
+    border-radius: 10px;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    
+
+
+}
+.text-part-age{
+    margin-left: 10px;
+    margin-top: 90px;
+
+
+
+}
+.age-question{
+    margin-top: 20px;
+}
+.age-question select{
+    padding: 0px 20px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    
+}
+.age-question input{
+    margin-top: 10px;
+    font-size: 18px;
+    outline: none;
+    padding: 5px 10px;
+}
+.age-question button{
+    padding: 5px 20px ;
+    margin-top: 10px;
+    background-color: #009c24;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+.answers-agequiz{
+    margin-top: 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+
+    width: 200px;
+    padding: 20px;
+    color: white;
+    font-style: bold;
+}
+
+}
 
 
 /* interest calculator*/
@@ -220,6 +516,7 @@
     background-color: #009c24;
     color: white;
     border: none;
+    border-radius: 10px;
     outline: none;
     padding: 10px 20px;
     font-size: 20px;
@@ -247,6 +544,26 @@
     margin-top: 10px;
 }
 
+@media (max-width:768px) {
+    .interest-calculator-container{
+    margin: 10px 25px;
+    padding: 20px 20px;
+    background-color: white;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+}
+.interest-calculator-container input{
+    padding: 10px 10px;
+    width: 90%;
+    outline: none;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(228, 228, 228);
+}
+}
 
 /* hours*/
 
